@@ -1,0 +1,77 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 420;
+  line-height: 1.8em;
+  color: #333;
+}
+
+.img1,
+.img2,
+.img3 {
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+.img1 {
+  background-image: url("img/chisom1.png");
+  min-height: 100%;
+}
+
+.img2 {
+  background-image: url("img/chisom2.png");
+  min-height: 450px;
+}
+
+.img3 {
+  background-image: url("img/tech.jpg");
+  min-height: 450px;
+}
+
+.sect {
+  text-align: center;
+  padding: 50px 70px;
+}
+
+.sect-dark {
+  background-color: #2a2e34;
+  color: #ddd;
+}
+
+.ptxt {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 26px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.ptxt .box {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+}
+
+.ptxt .box.transparent {
+  background-color: transparent;
+  color: #333;
+}
+
+@media (max-width: 580px) {
+  .img1,
+  .img2,
+  .img3 {
+    background-attachment: scroll;
+  }
+}
